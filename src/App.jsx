@@ -30,7 +30,7 @@ function App() {
   //   });
   // };
 
-  const [getOtp, setGetOtp] = useState("12345");
+  const [getOtp, setGetOtp] = useState("");
   const [submitOpt, setSubmitOtp] = useState("");
   const [verifyOtp, setVerifyOtp] = useState(false);
 
