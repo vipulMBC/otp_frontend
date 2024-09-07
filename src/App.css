@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #0E2C62;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;    
+  height: 100vh;            */
+}
+#root {
+  padding: 2rem;
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  align-items: center; 
+  height: 93vh;
+}
+.container{
+  width: 50%;
+  margin: auto;
+  /* border: 1px solid #9c9c9c; */
+  border: 1px solid #D4AD36;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px #D4AD36; /* Optional shadow */
+  box-sizing: border-box;
+}
+/* .event-heading{
+  color: #D4AD36;
+  font-family: "Sora", Sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+} */
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label{
+  color: #ffff;
+}
+
+.form-input {
+  border-radius: 8px;
+  border: 1px solid #575757;
+  /* background: rgba(217, 217, 217, 0.07); */
+  background: #ffff;
+  /* color: #757575; */
+  height: 25px;
+  padding: 13px 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  outline: none;
+}
+.submit-btn{
+  width: 40%;
+  margin: 10px auto;
+  /* margin-top: 5px; */
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #1a1a1a; */
+  /* background-color: #FCC54A; */
+  background-color: #B1740F;
+  color: #ffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.submit-btn:hover, .verify-btn:hover{
+  border-color: #213547;
+}
+
+.mendatory-field{
+  color: red;
+}
+
+.otp-tab input[type=text]{
+  width: 30px !important;
+  background-color: transparent;
+  /* color: #ffb92e; */
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127.5%;
+  text-align: center;
+  /* border: 0 solid #e5e7eb;
+  border-bottom: 1px solid #575757; */
+  border: 1px solid #575757;
+  color: #945e07;
+  outline: none;
+  margin-right: 3px;
+  border-radius: 3px;
+}
+
+.mobile-cont{
+  display: grid;
+  grid-template-columns: 74% 25%;
+  gap: 5px;
+}
+
+.verify-btn{
+  height: 40px;
+  margin-top: 7px;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  /* background-color: #FCC54A; */
+  background-color: #B1740F;
+  color: #ffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
