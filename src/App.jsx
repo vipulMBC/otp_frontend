@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useState } from "react";
 import "./App.css";
 import OtpVarification from "./component/OtpVarification";
@@ -50,7 +51,7 @@ function App() {
       console.log("sendData", sendData);
       // Handle form submission
       let res = await axios.post(
-        "http://192.168.80.211:3000/api/contact/verifyv_otp",
+        "http://3.6.83.75:8000/api/contact/api/contact/verifyv_otp",
         sendData
       );
       console.log("res: ", res);
@@ -76,7 +77,7 @@ function App() {
     // console.log('data', data)
     let res;
     if (data.number.length === 10) {
-      res = await axios.post("http://192.168.80.211:3000/api/contact", data);
+      res = await axios.post("http://3.6.83.75:8000/api/contact", data);
       if (res.data) {
         setGetOtp(res.data.otp.toString());
         formik.initialValues = {};
